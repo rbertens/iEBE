@@ -11,7 +11,8 @@ if [ "$CC" == "" ]; then
     CFLAGS="$CFLAGS `gsl-config --cflags --libs` -B/usr/lib/i386-linux-gnu -I/usr/include/i386-linux-gnu"
 
 # FORTRAN compiler
-FC=`which ifort`; FFLAGS=" -O3 -fast -heap-arrays -cpp"
+FC=`which ifort`; FFLAGS=""
+# -heap-arrays -cpp"
 if [ "$FC" == "" ]; then
   FC=`which gfortran`; FFLAGS=" -O3 -cpp"
 fi
