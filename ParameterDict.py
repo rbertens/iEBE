@@ -7,7 +7,7 @@ controlParameterList = {
 }
 
 initial_condition_control = {
-    'centrality': '30-40%',  # centrality bin
+    'centrality': '0-5%',  # centrality bin
     'cut_type': 'total_entropy',
     # centrality cut variable: total_entropy or Npart
     'initial_condition_type': 'superMC',
@@ -20,7 +20,7 @@ initial_condition_control = {
 }
 
 superMCParameters = {
-    'model_name'                    :   'MCGlb',    # MCGlb or MCKLN
+    'model_name'                    :   'MCKLN',    # MCGlb or MCKLN
     'Aproj'                         :   208,
     'Atarg'                         :   208,
     'ecm'                           :   2760,
